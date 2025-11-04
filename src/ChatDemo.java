@@ -108,7 +108,7 @@ public class ChatDemo {
         System.out.println("3. Після додавання дати:\n'" + myMessage.getContent() + "'");
         System.out.println("----------------------------------------");
 
-        myMessage = new AuthorDecorator(myMessage, "Васильєв І.П.");
+        myMessage = new AuthorDecorator(myMessage, "Бережняк І.Ю.");
         System.out.println("4. Фінальне повідомлення (з автором):\n'" + myMessage.getContent() + "'");
         System.out.println("----------------------------------------");
         System.out.println("\n*** Інша комбінація (Стискання + Автор) ***");
@@ -119,7 +119,7 @@ public class ChatDemo {
         anotherMessage = new CompressDecorator(anotherMessage);
         System.out.println("Після стискання:\n'" + anotherMessage.getContent() + "'");
 
-        anotherMessage = new AuthorDecorator(anotherMessage, "Васильєв І.П.");
+        anotherMessage = new AuthorDecorator(anotherMessage, "Бережняк І.Ю.");
         System.out.println("Фінальне (стиснуте + автор):\n'" + anotherMessage.getContent() + "'");
     }
 }
